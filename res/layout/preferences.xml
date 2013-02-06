@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<ScrollView android:id="@+id/scroll" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:layout_above="@+id/closeButton" android:layout_alignParentTop="true">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/mainLinearLayout" android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			<TextView android:text="@string/objectColor" android:id="@+id/TextView02"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textStyle="bold" android:layout_marginBottom="10dip"></TextView>
+			<TextView android:text="" android:id="@+id/objectColorView"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:text="@string/red"
+				android:layout_marginLeft="20dip" android:layout_width="80dip"
+				android:layout_height="wrap_content"></TextView>
+			<SeekBar android:id="@+id/redSeekBar"
+				android:layout_marginRight="20dip" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"></SeekBar>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:text="@string/green"
+				android:layout_marginLeft="20dip" android:layout_width="80dip"
+				android:layout_height="wrap_content"></TextView>
+			<SeekBar android:id="@+id/greenSeekBar" android:layout_width="fill_parent"
+				android:layout_marginRight="20dip" android:layout_height="wrap_content"></SeekBar>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:text="@string/blue"
+				android:layout_marginLeft="20dip" android:layout_width="80dip"
+				android:layout_height="wrap_content"></TextView>
+			<SeekBar android:id="@+id/blueSeekBar" android:layout_width="fill_parent"
+				android:layout_marginRight="20dip" android:layout_height="wrap_content"></SeekBar>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:text="@string/alpha"
+				android:layout_marginLeft="20dip" android:layout_width="80dip"
+				android:layout_height="wrap_content"></TextView>
+			<SeekBar android:id="@+id/alphaSeekBar" android:layout_width="fill_parent"
+				android:layout_marginRight="20dip" android:layout_height="wrap_content"></SeekBar>
+		</LinearLayout>
+
+		<TextView android:text="@string/displayAxis"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold" android:layout_marginBottom="10dip"
+			android:layout_marginTop="20dip"></TextView>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center_horizontal">
+			<TextView android:text="@string/axes"
+				android:layout_marginLeft="20dip" android:layout_width="80dip"
+				android:layout_height="wrap_content"></TextView>
+			<ToggleButton android:id="@+id/axesToggleButton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ToggleButton>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center_horizontal">
+			<TextView android:text="@string/grids"
+				android:layout_marginLeft="20dip" android:layout_width="80dip"
+				android:layout_height="wrap_content"></TextView>
+			<ToggleButton android:id="@+id/gridToggleButton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></ToggleButton>
+		</LinearLayout>
+
+
+		<Button android:text="@string/resetToDefault" android:id="@+id/resetButton"
+			android:layout_gravity="center_horizontal" android:layout_marginTop="20dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+	</LinearLayout>
+</ScrollView>
+	<Button android:text="@string/closePreferences" android:id="@+id/closeButton"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true"></Button>
+
+	<!-- <TextView android:layout_width="wrap_content" android:id="@+id/pushAd" 
+		android:layout_alignParentBottom="true" android:layout_height="wrap_content" 
+		android:text="Please click ad if you like this app :-)"></TextView> -->
+</RelativeLayout>

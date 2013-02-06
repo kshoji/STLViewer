@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<FrameLayout android:layout_above="@+id/rotateOrMoveToggleButton"
+		android:layout_width="fill_parent" android:id="@+id/stlFrameLayout"
+		android:layout_height="fill_parent">
+	</FrameLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:layout_height="wrap_content">
+		<ImageButton android:id="@+id/loadButton" android:src="@drawable/ic_menu_archive"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rotateOrMoveToggleButton"
+			android:layout_width="wrap_content" android:layout_alignTop="@+id/rotateOrMoveToggleButton"
+			android:layout_weight="1" android:background="#00ffffff"></ImageButton>
+		<ToggleButton android:id="@+id/rotateOrMoveToggleButton"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:textOn="@string/toggleButtonRotate" android:textOff="@string/toggleButtonMove"
+			android:layout_centerHorizontal="true" android:checked="true"
+			android:layout_weight="1" android:visibility="invisible"></ToggleButton>
+		<ImageButton android:id="@+id/preferncesButton"
+			android:src="@android:drawable/ic_menu_preferences"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/rotateOrMoveToggleButton"
+			android:layout_width="wrap_content" android:layout_alignTop="@+id/rotateOrMoveToggleButton"
+			android:layout_weight="1" android:background="#00ffffff"></ImageButton>
+	</LinearLayout>
+</RelativeLayout>

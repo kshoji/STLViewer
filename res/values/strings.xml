@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">STLViewer</string>
+    <string name="hello">Please load the STL file from the file chooser(menu key, or tap the screen).</string>
+    <string name="error_fetch_data">Failed to read the STL file.</string>
+    <string name="stl_load_progress_title">STL file loading...</string>
+    <string name="stl_load_progress_message">Please wait a moment.</string>
+    <!-- dialog -->
+    <string name="menu_open">Select STL file...</string>
+    <string name="parent_directory">Parent directory</string>
+    <string name="close_dialog">Close dialog</string>
+    <!-- toggle button -->
+    <string name="toggleButtonMove">Move</string>
+    <string name="toggleButtonRotate">Rotate</string>
+    <!-- preferences -->
+    <string name="app_pref">STLViewer Preferences</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="alpha">Alpha</string>
+    <string name="objectColor">Object color:</string>
+    <string name="displayAxis">Display axes and grids:</string>
+    <string name="grids">Grids:</string>
+    <string name="axes">Axes:</string>
+    <string name="resetToDefault">Reset to default value.</string>
+    <string name="closePreferences">Save &amp; close</string>
+</resources>

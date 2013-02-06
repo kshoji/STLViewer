@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- drawable -->
+	<drawable name="translucent_background">#44000000</drawable>
+	
+	<!-- style -->
+	<style name="Theme.Transparent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+	</style>
+	
+	<style name="Theme.DefaultActivity" parent="android:Theme">   
+		<item name="android:windowAnimationStyle">@style/Animation.Activity</item> 
+    </style>
+    
+    <style name="Animation" parent="android:Animation" />
+	<style name="Animation.Activity" parent="android:Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+		<item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+		<item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+		<item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+	</style>
+    
+</resources>
